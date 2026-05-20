@@ -323,8 +323,8 @@ footer { padding: 2rem 3.5rem; border-top: 1px solid var(--border); display: fle
       </div>
       <div class="about-socials">
         <a class="social-pill" href="https://github.com/BELLAZARA" target="_blank">⌥ GitHub</a>
-        <a class="social-pill" href="https://www.linkedin.com/in/mercy-wangui-988a85288?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">in LinkedIn</a>
-        <a class="social-pill" href="mercymbuthia1711@gmail.com">✉ Email</a>
+        <a class="social-pill" href="https://www.linkedin.com/in/mercy-wangui-988a85288" target="_blank">in LinkedIn</a>
+        <a class="social-pill" href="mailto:mercymbuthia1711@gmail.com">✉ Email</a>
         <a class="social-pill" href="https://twitter.com/bellazara_dev" target="_blank">𝕏 Twitter</a>
       </div>
     </div>
@@ -597,9 +597,9 @@ footer { padding: 2rem 3.5rem; border-top: 1px solid var(--border); display: fle
       <p style="margin-top:.8rem;">Whether you're a startup looking for your first hire, a scale-up needing a senior engineer, or an agency with project work — I'd love to chat. I'm open to full-time roles, contract work, and freelance projects globally.</p>
       <p style="margin-top:1rem;">Based in <strong style="color:var(--text)">Nairobi, Kenya</strong>. Available for remote work worldwide and open to relocation to the UK, EU, Canada, UAE, and beyond.</p>
       <div class="contact-links">
-        <a class="clink" href="mailto:bellazara.dev@gmail.com"><div class="clink-icon">✉</div>bellazara.dev@gmail.com</a>
+        <a class="clink" href="mailto:mercymbuthia1711@gmail.com"><div class="clink-icon">✉</div>mercymbuthia1711@gmail.com</a>
         <a class="clink" href="https://github.com/BELLAZARA" target="_blank"><div class="clink-icon">⌥</div>github.com/BELLAZARA</a>
-        <a class="clink" href="https://linkedin.com/in/bellazara" target="_blank"><div class="clink-icon">in</div>linkedin.com/in/bellazara</a>
+        <a class="clink" href="https://www.linkedin.com/in/mercy-wangui-988a85288" target="_blank"><div class="clink-icon">in</div>linkedin.com/in/mercy-wangui</a>
         <a class="clink" href="https://twitter.com/bellazara_dev" target="_blank"><div class="clink-icon">𝕏</div>@bellazara_dev</a>
       </div>
     </div>
@@ -664,7 +664,7 @@ KEY FACTS ABOUT BELLA:
 - Cloud/DevOps: AWS, GCP, Docker, GitHub Actions, Vercel, Railway
 - Mobile: React Native, Expo, Flutter
 - Other: GraphQL, WebSockets, Stripe, M-Pesa API, Twilio, Figma
-- GitHub: github.com/BELLAZARA | Email: bellazara.dev@gmail.com | LinkedIn: linkedin.com/in/bellazara
+- GitHub: github.com/BELLAZARA | Email: mercymbuthia1711@gmail.com | LinkedIn: linkedin.com/in/mercy-wangui-988a85288
 - Location: Nairobi, Kenya
 - Available: Yes — open to remote roles globally, full-time, contract, or freelance. Open to relocation (UK, EU, UAE, Canada).
 - Rates: Negotiable depending on scope. Happy to discuss on a call.
@@ -707,11 +707,11 @@ async function sendMessage(){
     });
     const data = await res.json();
     t.remove();
-    const reply = data.content?.[0]?.text || "I'm having trouble connecting right now. Please email Bella directly at bellazara.dev@gmail.com!";
+    const reply = data.content?.[0]?.text || "I'm having trouble connecting right now. Please email Bella directly at mercymbuthia1711@gmail.com!";
     addMsg(reply.replace(/\n/g,'<br>'),false);
   }catch{
     t.remove();
-    addMsg("Sorry, I'm having connection issues. Please reach out directly at <a href='mailto:bellazara.dev@gmail.com'>bellazara.dev@gmail.com</a> 💌",false);
+    addMsg("Sorry, I'm having connection issues. Please reach out directly at <a href='mailto:mercymbuthia1711@gmail.com'>mercymbuthia1711@gmail.com</a> 💌",false);
   }
   sendBtn.disabled=false; input.focus();
 }
@@ -723,7 +723,7 @@ function submitForm(){
   const s=document.getElementById('cSubject').value.trim();
   const m=document.getElementById('cMessage').value.trim();
   if(!n||!e||!m){ alert('Please fill in name, email, and message.'); return; }
-  window.location.href=`mailto:bellazara.dev@gmail.com?subject=${encodeURIComponent(s||'Portfolio Inquiry')}&body=${encodeURIComponent('Hi Bella,\n\n'+m+'\n\nFrom: '+n+'\nEmail: '+e)}`;
+  window.location.href=`mailto:mercymbuthia1711@gmail.com?subject=${encodeURIComponent(s||'Portfolio Inquiry')}&body=${encodeURIComponent('Hi Bella,\n\n'+m+'\n\nFrom: '+n+'\nEmail: '+e)}`;
 }
 
 // ── Scroll reveal ──
